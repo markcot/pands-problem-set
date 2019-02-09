@@ -1,0 +1,171 @@
+# pands-problem-set
+GMIT problem set for Programming and Scripting Module 2019
+Mark Cotter, last update 2019-02-09
+Email: g00376335@gmit.ie
+
+#######################################################################################
+
+Exercise 1 - sumupto.py
+Using python code
+Requests user to enter a positive integer 'i'
+The 'sum' of numbers between 1 and the entered value of 'i' is outputed
+
+2019/02/01
+I created the first file 'python sumupto.py' version V1_01 in a folder on my Desktop
+My first thought was that I needed to have variables for the user to
+enter save a positive integer and to create a sum.
+I created the variables 'i' and 'sum' and gave them initial state values
+
+I didn't know how to ask python how to request a user to input something so
+I did a google search and found the website
+https://anh.cs.luc.edu/python/hands-on/3.1/handsonHtml/io.html
+I adapted the code on the page for the 'input()' function and the data type
+'int' so that the program requested the user to enter an integar.
+
+I found that as I specified an integar type input if the user entered a string 
+or float the program would automatically give an error so I decided that I didn't 
+see the need to write a test loop if the number entered was not an integer.
+However I didn't want a negative or zero integar so I wrote loop to give an error
+message if a number less than 1 was enter and to keep requesting a positive integar.
+
+I wanted to keep the variable number to a minimum so I did not want to use a counter
+variable as discussed in the GMIT Janu 2019 lecture notes. Instead I decided that as 
+I didn't need to output the value of the entered variable 'i' at the end of the
+program, I could just use a loop to count down from the value of 'i' to 0 and keep adding
+the value of 'i' to the total variable 'sum'.
+
+I added to extra print functions to the text to test what happened to variables when 
+I made tweets to the code. At the end I just added # before these print functions so
+they would not print in the final version of the code, but could be used later if
+the code needed to be ammended.
+
+To get my head around a bit of the code and function I did some reading of the book
+'A Whirlwind Tour of Python': VanderPlas, Jake: published by O'Rielly Media Inc. 2016
+From the code example in the book and GMIT Jan 2019 lecture noted I adapted shorted
+version of adding the sum to it's self and operators '+=' and '-='
+
+I got the program working and called it a day
+
+2019/02/02
+I updated the file 'python sumupto.py' to version V1_02 in my Desktop folder
+I was interested to see if I could use a range function to solve this problem rather
+than using a while loop. After playing around with it for a while, I found that for the
+range function to work I needed an extra variable to found the values out of the range.
+I added a variable 'x' and gave it it an intial value
+I added double comment markers ## to the OPTION 01 while loop while I tested the 
+OPTION 02 range function.
+
+I didn't want the range to start at 1 and end at the value of
+the entered variable 'i'. However I needed to add +1 to 'i' for this to work so using the
+'range of 1 to (i+1)' gave me the desired result. Using x and in this range and the 
+for function I was able to calculate the 'sum' without looping.
+I wasn't sure which would be a more efficient use of the program not having the loop or
+having 2 or 3 variables. I decided to stick with OPTION 01 while loop that had only 2 variables,
+but changed the value of 'i' and comment out ## the OPTION 02 for loop with 3 variables, but 
+retained of value of 'i'. I left instruction in comments that if the value of 'i' need to be 
+reatined the OPTION 01 while loop could be commented out (add ## before code) and the 
+OPTION 02 for loop and 'x' variable could be uncommented (remove ## before the code)
+
+I created my github profile and added 'python sumupto.py' to version V1_02 to the
+repositry
+
+2019/02/09
+I decided to created this README.md file and uupdated the file 'python sumupto.py' to
+version V1_03 ammended some comments and added notes to my references
+
+# Code reference sources:
+# 1. Dr Ian McLoughlin, GMIT: H Dip in Data Analytics lecture notes,
+#    Janurary 2019
+#    I adapted the lecture notes while loop to count down to 0 from 'i' so
+#    that I could leave out a counter variable
+# 2. 'A Whirlwind Tour of Python': VanderPlas, Jake:
+#    published by O'Rielly Media Inc. 2016
+#    Reading first few chapters I adapted shorted version of adding
+#    the sum to it's self and operators '+=' and '-='
+# 3. I adapted code on the following web page to request user to input a value
+#    and make that value an integer.
+#    https://anh.cs.luc.edu/python/hands-on/3.1/handsonHtml/io.html
+
+#######################################################################################
+
+Exercise 2 - begins-with-t.py
+Check if today is a day that begins with the letter 'T'
+(i.e. 'Tuesday' or 'Thursday')
+Outputs 'Yes' if today begins with a 'T'
+Outputs 'No' if today does not begin with a 'T'
+
+2019/02/02
+I created the first file 'begins-with-t.py' version V1_01 in a folder on my Desktop
+My first thought was that I could possibly adapt code from the Jan 2019 GMIT lecture
+example Python-Tuesday to suit this problem.
+
+I created a variable 'today' for todays date
+I began playing with the idea that if I could write an if and elif
+statements using code 'if datetime.datetime.today().weekday() == 1:' for Tuesday
+and 'if datetime.datetime.today().weekday() == 4:' for Thursday I could make the Yes
+condition print if either of these conditions were true and use an else function to
+print No.
+
+I added to extra print functions to the text to test what happened to variables when 
+I made tweets to the code. At the end I just added # before these print functions so
+they would not print in the final version of the code, but could be used later if
+the code needed to be ammended.
+
+However, I though that this was a boring solution and wanted to shorten it. I noticed
+that the problem was really to check if today starts with the letter 'T'. I wondered
+if I could find a function to return the current day of the week as a text string.
+I did a google search and found the website
+https://stackoverflow.com/questions/9847213/how-do-i-get-the-day-of-week-given-a-date-in-python
+
+I found that if I added the string date type to the function it get the variable 'today' as
+a text string with todays date. Now I need to extract the first letter from this string.
+I did a google search and found the website
+https://stackoverflow.com/questions/7108080/python-get-the-first-character-of-the-first-string-in-a-list
+I adapted the code on the webpage to selcet the first character of the text string 'today'
+
+I create an if and else function to test of 'today' begins with a 'T'.
+
+The revised version of the program worked a treat.
+
+I created my github profile and added 'begins-with-t.py' to version V1_01 to the
+repositry
+
+2019/02/09
+I decided to created this README.md file and uupdated the file 'begins-with-t.py' to
+version V1_02 ammended some comments and added notes to my references.
+On thinking back maybe 'today' wasn't a good variable name for this program as I have
+read that today may already be defined variable in programming. After more research, I
+may change this variable name.
+
+# Code reference sources:
+# 1. Dr Ian McLoughlin, GMIT: H Dip in Data Analytics lecture notes,
+#    Janurary 2019
+# 2. 'A Whirlwind Tour of Python': VanderPlas, Jake:
+#    published by O'Rielly Media Inc. 2016
+# 3. I adapted code from the following webpage to return a string for the
+#    current day of the week
+#    https://stackoverflow.com/questions/9847213/how-do-i-get-the-day-of-week-given-a-date-in-python
+# 4. I adapted code from the following webpage to return the first character
+#    of a text string. This was covered also in a later GMIT lecture
+#    https://stackoverflow.com/questions/7108080/python-get-the-first-character-of-the-first-string-in-a-list
+
+#######################################################################################
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
