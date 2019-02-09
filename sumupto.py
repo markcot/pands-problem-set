@@ -1,4 +1,4 @@
-# Mark Cotter, V1_02, 2019-02-02
+# Mark Cotter, V1_03, 2019-02-09
 
 # Requests user to enter a positive integer 'i'
 # The 'sum' of numbers between 1 and the 
@@ -49,7 +49,12 @@ print(sum)
 # Code reference sources:
 # 1. Dr Ian McLoughlin, GMIT: H Dip in Data Analytics lecture notes,
 #    Janurary 2019
+#    I adapted the lecture notes while loop to count down to 0 from i so
+#    that I could leave out a counter variable
 # 2. 'A Whirlwind Tour of Python': VanderPlas, Jake:
 #    published by O'Rielly Media Inc. 2016
-# 3. Web page:
+#    Reading first few chapters I adapted shorted version of adding
+#    the sum to it's self and operators '+=' and '-='
+# 3. I adapted code on the following web page to request user to input a value
+#    and make that value an integer.
 #    https://anh.cs.luc.edu/python/hands-on/3.1/handsonHtml/io.html
