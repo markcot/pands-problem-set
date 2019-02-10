@@ -1,9 +1,17 @@
-# Mark Cotter, V1_02, 2019-02-09
+# Mark Cotter, V1_03, 2019-02-10
 
 # Check if today is a day that begins with the letter 'T'
 # (i.e. 'Tuesday' or 'Thursday')
 # Outputs 'Yes' if today begins with a 'T'
 # Outputs 'No' if today does not begin with a 'T'
+
+# V1_03 update 2019-02-10
+# Comments updated
+
+# V1_02 update 2019-02-09
+# Reference and comments updated
+
+# V1_01 - Program created 2019-02-02
 
 # Set intial state of string variable 'today' for the day of the week
 today = "Monday"
@@ -29,8 +37,12 @@ else:
 # Code reference sources:
 # 1. Dr Ian McLoughlin, GMIT: H Dip in Data Analytics lecture notes,
 #    Janurary 2019
+#    I adapted code from the lecture notes example Python-Tuesday for checking
+#    what todays day of the week is.
 # 2. 'A Whirlwind Tour of Python': VanderPlas, Jake:
 #    published by O'Rielly Media Inc. 2016
+#    Reading first few chapters I adapted code for if and elif for use in this
+#    program.
 # 3. I adapted code from the following webpage to return a string for the
 #    current day of the week
 #    https://stackoverflow.com/questions/9847213/how-do-i-get-the-day-of-week-given-a-date-in-python

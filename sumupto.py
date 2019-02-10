@@ -1,12 +1,21 @@
-# Mark Cotter, V1_03, 2019-02-09
+# Mark Cotter, V1_04, 2019-02-10
 
 # Requests user to enter a positive integer 'i'
 # The 'sum' of numbers between 1 and the 
 # entered value of 'i' is outputed
 
-# V1_02 update - OPTION 02 added if needed to keep user entered 'i' value
+# V1_04 update 2019-02-10
+# Comments updated
+
+# V1_03 update 2019-02-09
+# Reference and comments updated
+
+# V1_02 update 2019-02-02
+# OPTION 02 added if needed to keep user entered 'i' value
 # Remove double comment ## below at OPTION 02 code loop, initial variable 
 #   'x' and add ## to OPTION 01 loop code block to use OPTION 02
+
+# V1_01 - Program created 2019-02-01
 
 # Set intial states for variables 'i', 'x' and 'sum'
 i = 1
@@ -53,7 +62,7 @@ print(sum)
 #    that I could leave out a counter variable
 # 2. 'A Whirlwind Tour of Python': VanderPlas, Jake:
 #    published by O'Rielly Media Inc. 2016
-#    Reading first few chapters I adapted shorted version of adding
+#    Reading first few chapters I adapted shorted version code for adding
 #    the sum to it's self and operators '+=' and '-='
 # 3. I adapted code on the following web page to request user to input a value
 #    and make that value an integer.
