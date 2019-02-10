@@ -166,8 +166,8 @@ I created the first file 'divisors.py' version V1_01 in a folder on my Desktop
 that is now link using git to my github repository 'pands-problem-set'.
 
 My first thought was that I could possibly adapt code from the Jan and Feb 2019 GMIT
-lectures for lecture notes example of for loops and remaining fractions after divisions
-(modulus) and to print numbers when the modulus == 0 after divsion.
+lectures for lecture notes example of for loops and remaining fractions after
+divisions (modulus) and to print numbers when the modulus == 0 after divsion.
 
 I wanted this program so that it could be modified later to look for other divisors.
 As such, I decided that rather than hard coding the numbers 6 and 12 into the code, 
@@ -207,11 +207,64 @@ Code reference sources:
 
 #####################################################################################
 
+Exercise 4 - collatz.py
+Using python code
+Write a program that
+1. Asks a user to input any positive integar and
+2. Outputs the sucessive values of the following calculation
+3. At each step calculate the next value by taking the current value and
+4. if it even, divide it by 2 
+5. but if it odd, multiply it by three and add one
+6. End the program when the current value it one.
 
+2019/02/10
+I created the first file 'collatz.py' version V1_01 in a folder on my Desktop
+that is now link using git to my github repository 'pands-problem-set'.
 
+My first thought was that I could possibly adapt code I wrote for Exercise 1
+'sumupto.py' to ask user for a positive integar. That cover part 1 of the program
+Also i could use part of the modulus part of the code from Exercise 3 'divisors.py'
+to check if the calculated value is even or odd by checking the modulas after 
+dividing by 2 is = 0
 
+As with 'sumupto.py' I found that as I specified an integar type input, if the
+user entered a string or float the program would automatically give an error 
+so I decided that I didn't need to write a test loop if the number entered was 
+not an integer.
+However I didn't want a negative or zero integar so I wrote a loop to give an 
+error message if a number less than 1 was entered and to keep requesting a 
+positive integar.
 
+I figured the best way to save this calculated data was to create a list and keep
+using the last digit in the list to cycle through the list and keep appending the
+data to the end of the list. This way I could prob the list at the end of the 
+program
 
+I created a variable 'i' to save the store the inputed and apply the
+calculation to. I created a list 'l' to save the calculated value in and to
+print at the end.
+
+Reading the python online tutourial webpages
+https://docs.python.org/3/tutorial/introduction.html#lists and
+https://docs.python.org/3/tutorial/datastructures.html
+I created a while loop to apply the required calculation to 'i' until 'i' = 1
+In each loop I used the list.append(i) command to add the value of 'i' to the
+end of the end and checked last value in the list to see if it equals 1.
+
+The program work, but the output was a in list format if the print(l) command was
+used. eg for starting at integar 10, output is [10, 5.0, 16.0, 8.0, 4.0, 2.0, 1.0]
+I noticed that the output of the even number division was a float instead of integar.
+I added the i = int() function in the previous loop to force the even number division
+into an integar.
+
+I then need to extract the values from the list 'l' and print them in a line
+to get the same text as shown in the exercise.
+I adapted code the python online tutourial webpage
+https://docs.python.org/3/tutorial/introduction.html#lists
+in a 'while' loop to create a 'for' loop to print all the values in the list 'l' with a
+space separator only print( , end=' ')
+
+The program works. I added 'collatz.py' version V1_01 to git and uploaded to my github repositry.
 
 
 
