@@ -1,4 +1,7 @@
-# Mark Cotter, V1_01, 2019-02-10
+# Mark Cotter, V1_02, 2019-02-10
+
+# V1_02 - 2019-02-10
+# Minor Comment updates
 
 # V1_01 - Program created 2019-02-10
 
@@ -63,7 +66,7 @@ for i in range(0,len(l)):
 
 # Code reference sources:
 # 1. Dr Ian McLoughlin, GMIT: H Dip in Data Analytics lecture notes,
-#    Janurary 2019
+#    Janurary and Febrary 2019
 #    I adapted the lecture notes while loop and discussion about lists
 #    and the appending items to lists.
 # 2. Mark Cotter February 2019 code for Exercise 1 'sumupto.py' and Exercise 3

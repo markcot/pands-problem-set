@@ -237,36 +237,56 @@ positive integar.
 
 I figured the best way to save this calculated data was to create a list and keep
 using the last digit in the list to cycle through the list and keep appending the
-data to the end of the list. This way I could prob the list at the end of the 
+data to the end of the list. This way I could print the list at the end of the 
 program
 
-I created a variable 'i' to save the store the inputed and apply the
-calculation to. I created a list 'l' to save the calculated value in and to
+I created a variable 'i' to store the inputed and apply the
+calculation to. I created a list 'l' to store the calculated values in and to
 print at the end.
 
-Reading the python online tutourial webpages
+I adapted code from the python online tutorial webpage
 https://docs.python.org/3/tutorial/introduction.html#lists and
 https://docs.python.org/3/tutorial/datastructures.html
 I created a while loop to apply the required calculation to 'i' until 'i' = 1
 In each loop I used the list.append(i) command to add the value of 'i' to the
-end of the end and checked last value in the list to see if it equals 1.
+end of the list and checked last value in the list to see if it equals 1.
 
-The program work, but the output was a in list format if the print(l) command was
+The program worked, but the output was a in a list format if the print(l) command was
 used. eg for starting at integar 10, output is [10, 5.0, 16.0, 8.0, 4.0, 2.0, 1.0]
 I noticed that the output of the even number division was a float instead of integar.
 I added the i = int() function in the previous loop to force the even number division
-into an integar.
+into an integar. I think the float divsion // may have had the same effect.
 
-I then need to extract the values from the list 'l' and print them in a line
+I then needed to extract the values from the list 'l' and print them in a line
 to get the same text as shown in the exercise.
-I adapted code the python online tutourial webpage
+I adapted code from the python online tutorial webpage
 https://docs.python.org/3/tutorial/introduction.html#lists
 in a 'while' loop to create a 'for' loop to print all the values in the list 'l' with a
 space separator only print( , end=' ')
 
 The program works. I added 'collatz.py' version V1_01 to git and uploaded to my github repositry.
 
+I updated the file file 'collatz.py' version V1_02 updated some of the comments and
+uploaded it to my github repositry.
 
+Code reference sources:
+1. Dr Ian McLoughlin, GMIT: H Dip in Data Analytics lecture notes,
+   Janurary and Febrary 2019
+   I adapted the lecture notes while loop and discussion about lists
+   and the appending items to lists.
+2. Mark Cotter February 2019 code for Exercise 1 'sumupto.py' and Exercise 3
+   divisors.py asking user to input a positive integar check if it even or odd
+   by checking the modulas after dividing by 2 is = 0
+3. 'A Whirlwind Tour of Python': VanderPlas, Jake:
+   published by O'Rielly Media Inc. 2016
+   Reading first few chapters I adapted code for not equal to != if and
+   elif for use in this program.
+4. I adpated code the the folowing python tutorial webpage about lists
+   and appending list. I adpated code in a 'while' loop to create a 'for' loop
+   to print all the values in the list 'l' with a space separator only
+   print( , end=' ')
+   https://docs.python.org/3/tutorial/introduction.html#lists
+   https://docs.python.org/3/tutorial/datastructures.html
 
 
 
