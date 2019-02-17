@@ -1,7 +1,9 @@
+# Exercise 3 - divisors.py
 # Mark Cotter, V1_02 2019-02-17
 
 # V1_02 - 2019-02-10
-# Comments updated
+# Comments updated and if statement '&' replaced with 'and'
+# Changed variable 'x' to 'i'
 
 # V1_01 - Program created 2019-02-10
 
@@ -10,8 +12,8 @@
 
 # Assign variable 'a', 'b', 's' and 'e' for 'lower divisor' of 6,
 # 'upper divisor' of 12 in the range 'starting' at 1,000 and 'ending' at 10,000
-# Also use variable 'x' to search in the range of 's' to 'e'.
-(a, b, s, e, x) = (6, 12, 1000, 10000, 1)
+# Also use variable 'i' to search in the range of 's' to 'e'.
+(a, b, s, e, i) = (6, 12, 1000, 10000, 1)
 
 # Check print of values to be used
 #print("The lower divisor is", a, "\n"
@@ -19,16 +21,16 @@
 #    "The range is from", s, "to", e)
 
 # Check values in range 's' to 'e' fulfil the
-# TRUE condition = "divisible by 'a' but not by 'b'"
-# eg if the modulus when dividing 'x' by 'a' is = 0 and if the modulus of 
-# dividing 'x' by 'b' is greater than zero.
-# Use 'x' to search the range and print the number when the required condition
-# is TRUE
+# True condition = "divisible by 'a' but not by 'b'"
+# eg if the modulus when dividing 'i' by 'a' is = 0 and if the modulus of 
+# dividing 'i' by 'b' is greater than zero.
+# Use 'i' to search the range and print the number when the required condition
+# is True
 # The end of the range has to extended by +1 to ensure that the value of 'e'
-# is also checked for the TRUE condition.
-for x in range(s, (e + 1)):
-    if (x % a == 0) & (x % b > 0):
-        print(x)
+# is also checked for the True condition.
+for i in range(s, (e+1)):
+    if (i % a == 0) and (i % b > 0):
+        print(i)
 
 # Code reference sources:
 # 1. Dr Ian McLoughlin, GMIT: H Dip in Data Analytics lecture notes,

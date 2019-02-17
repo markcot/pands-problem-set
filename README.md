@@ -88,7 +88,7 @@ Updated the file 'python sumupto.py' to version V1_05 & amended some comments
 
 #####################################################################################
 
-# Exercise 2 - begins-with-t.py
+## Exercise 2 - begins-with-t.py
 Using python code
 Check if today is a day that begins with the letter 'T'
 (i.e. 'Tuesday' or 'Thursday')
@@ -162,7 +162,7 @@ Updated the file 'begins-with-t.py' to version V1_04 & amended some comments
 
 #####################################################################################
 
-# Exercise 3 - divisors.py
+## Exercise 3 - divisors.py
 Using python code
 Write a program that prints all numbers between 1,000 and 10,000
 that are divisible by 6 but not 12
@@ -201,7 +201,8 @@ were divisible by 6 ('a') but returned a 0.5 remainder when divided by 12 ('b').
 I added 'divisors.py' version V1_01 to git and uploaded to my github repository.
 
 ### 2019/02/17
-Updated the file 'divisors.py' to version V1_02 & amended some comments
+Updated the file 'divisors.py' to version V1_02, amended some comments
+and if statement '&' replaced with 'and'. Changed variable 'x' to 'i'
 
 ## Code reference sources:
 1. Dr Ian McLoughlin, GMIT: H Dip in Data Analytics lecture notes,
@@ -216,7 +217,7 @@ Updated the file 'divisors.py' to version V1_02 & amended some comments
 
 #####################################################################################
 
-# Exercise 4 - collatz.py
+## Exercise 4 - collatz.py
 Using python code
 Write a program that
 1. Asks a user to input any positive integer and

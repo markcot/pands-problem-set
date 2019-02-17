@@ -1,3 +1,4 @@
+# Exercise 1 - sumupto.py
 # Mark Cotter, V1_05, 2019-02-17
 
 # Requests user to enter a positive integer 'i'

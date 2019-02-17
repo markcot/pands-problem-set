@@ -1,3 +1,4 @@
+# Exercise 4 - collatz.py
 # Mark Cotter, V1_03, 2019-02-17
 
 # V1_03 - 2019-02-17

@@ -1,3 +1,4 @@
+# Exercise 2 - begins-with-t.py
 # Mark Cotter, V1_04, 2019-02-17
 
 # Check if today is a day that begins with the letter 'T'
