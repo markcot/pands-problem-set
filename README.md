@@ -169,7 +169,7 @@ that are divisible by 6 but not 12
 
 ### 2019/02/10
 I created the first file 'divisors.py' version V1_01 in a folder on my Desktop
-that is now link using git to my github repository 'pands-problem-set'.
+that is now linked using git to my github repository 'pands-problem-set'.
 
 My first thought was that I could possibly adapt code from the Jan and Feb 2019 GMIT
 lectures for lecture notes example of for loops and remaining fractions after
@@ -229,7 +229,7 @@ Write a program that
 
 ### 2019/02/10
 I created the first file 'collatz.py' version V1_01 in a folder on my Desktop
-that is now link using git to my github repository 'pands-problem-set'.
+that is now linked using git to my github repository 'pands-problem-set'.
 
 My first thought was that I could possibly adapt code I wrote for Exercise 1
 'sumupto.py' to ask user for a positive integer. That cover part 1 of the program
@@ -284,7 +284,7 @@ Updated the file 'collatz.py' to version V1_03 & amended some comments
 
 ## Code reference sources:
 1. Dr Ian McLoughlin, GMIT: H Dip in Data Analytics lecture notes,
-   Janurary and Febrary 2019
+   January and February 2019
    I adapted the lecture notes while loop and discussion about lists
    and the appending items to lists.
 2. Mark Cotter February 2019 code for Exercise 1 'sumupto.py' and Exercise 3
@@ -302,7 +302,51 @@ Updated the file 'collatz.py' to version V1_03 & amended some comments
    https://docs.python.org/3/tutorial/datastructures.html
 
 
+#####################################################################################
 
+## Exercise 5 - primes.py
+Using python code
+Write a program that asks the user to input a positive integer and tells the
+user whether the number is a prime.
+
+### 2019/02/17
+I created the first file 'primes.py' version V1_01 in a folder on my Desktop
+that is linked using git to my github repository 'pands-problem-set'.
+
+My first thought was that I could possibly adapt code I wrote for Exercise 1
+'sumupto.py' to ask user for a positive integer. That cover part 1 of the program.
+I used this code to ask the user for a number and stored it in the variable 'num'
+As with 'sumupto.py' I found that as I specified an integer type input, if the
+user entered a string or float the program would automatically give an error 
+so I decided that I didn't need to write a test loop if the number entered was 
+not an integer.
+However I didn't want a negative integer so I wrote a loop to give an 
+error message if a number less than 0 was entered and to keep requesting a 
+positive integer until 0 or greater positive integer.
+
+In the Week 4 lecture notes, there was a discussion about the break keyword
+and using for loops to check for primes so that seemed like a good place to start.
+I noticed that the scope of the program was to just tell the user if the
+number was a prime. Therefore, the program shouldn't do anything if the positive
+integer is not a prime.
+
+The first prime number is 2 so if a 0 or 1 is entered, the program should also
+does nothing. If the number inputted is 2 or greater check if the number a prime
+by check if is has any divisible number between 2 and up the number. 
+
+The program cycle through the range of values between 2 and 'num'. I used a variable 'i' cycle through the range.
+
+The program works. I added 'primes.py' version V1_01 to git and uploaded to my github repository.
+
+## Code reference sources:
+ 1. Mark Cotter February 2019 code for Exercise 1 'sumupto.py' asking user
+    to input a positive integer.
+ 2. Dr Ian McLoughlin, GMIT: H Dip in Data Analytics lecture notes,
+    January and February 2019
+    I adapted the lecture notes code about for loops and break 
+ 3. I adapted code from the python online tutorial webpage
+    https://docs.python.org/3/tutorial/controlflow.html 
+    to use a for loop and break to check if a number is a prime
 
 
 
