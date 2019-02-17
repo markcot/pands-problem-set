@@ -1,16 +1,16 @@
 # pands-problem-set
 GMIT problem set for Programming and Scripting Module 2019
-Created by :Mark Cotter, Email: g00376335@gmit.ie
-LAST UPDATED 2019-02-10
+#### Created by: Mark Cotter, Email: g00376335@gmit.ie
+### LAST UPDATED 2019-02-17
 
 #####################################################################################
 
-Exercise 1 - sumupto.py
+## Exercise 1 - sumupto.py
 Using python code
 Requests user to enter a positive integer 'i'
-The 'sum' of numbers between 1 and the entered value of 'i' is outputed
+The 'sum' of numbers between 1 and the entered value of 'i' is outputted
 
-2019/02/01
+### 2019/02/01
 I created the first file 'python sumupto.py' version V1_01 in a folder on my Desktop.
 My first thought was that I needed to have variables for the user to
 enter save a positive integer and to save a sum in.
@@ -20,16 +20,16 @@ I didn't know how to ask python how to request a user to input something so
 I did a google search and found the website
 https://anh.cs.luc.edu/python/hands-on/3.1/handsonHtml/io.html
 I adapted the code on the page for the 'input()' function and the data type
-'int' so that the program requested the user to enter an integar.
+'int' so that the program requested the user to enter an integer.
 
-I found that as I specified an integar type input, if the user entered a string 
+I found that as I specified an integer type input, if the user entered a string 
 or float the program would automatically give an error so I decided that I didn't 
 need to write a test loop if the number entered was not an integer.
-However I didn't want a negative or zero integar so I wrote a loop to give an error
-message if a number less than 1 was entered and to keep requesting a positive integar.
+However I didn't want a negative or zero integer so I wrote a loop to give an error
+message if a number less than 1 was entered and to keep requesting a positive integer.
 
 I wanted to keep the variables used to a minimum so I did not want to use a counter
-variable as discussed in the GMIT Janu 2019 lecture notes. Instead I decided that as 
+variable as discussed in the GMIT January 2019 lecture notes. Instead I decided that as 
 I didn't need to output the value of the entered variable 'i' at the end of the
 program, I could just use a loop to count down from the value of 'i' to 0 and keep adding
 the value of 'i' to the total variable 'sum'.
@@ -37,20 +37,20 @@ the value of 'i' to the total variable 'sum'.
 I added extra print functions to the code, to test what happened to variables when 
 I made tweets to the code. At the end I just added # before these print functions so
 they would not print in the final version of the code, but could be used later if
-the code needed to be ammended.
+the code needed to be amended.
 
 To get my head around a bit of the code and function I did some reading of the book
 'A Whirlwind Tour of Python': VanderPlas, Jake: published by O'Rielly Media Inc. 2016
 From the code example in the book and GMIT Jan 2019 lecture noted I adapted shorted
-version of adding the sum to it's self and operators '+=' and '-='.
+version of adding the sum to itself and operators '+=' and '-='.
 
 I got the program working and called it a day.
 
-2019/02/02
+### 2019/02/02
 I updated the file 'python sumupto.py' to version V1_02 in my Desktop folder
 I was interested to see if I could use a range function to solve this problem rather
 than using a while loop. After playing around with it for a while, I found that for the
-range function to work I needed an extra variable to cycle throught the values out of the range. I added a variable 'x' and gave it it an intial value.
+range function to work I needed an extra variable to cycle through the values out of the range. I added a variable 'x' and gave it it an initial value.
 I added double comment markers ## to the OPTION 01 while loop while I tested the 
 OPTION 02 range function.
 
@@ -58,41 +58,44 @@ I wanted the range function to start at 1 and end at the value of
 the entered variable 'i'. However I needed to add +1 to 'i' for this to work so using the
 'range of 1 to (i+1)' gave me the desired result. Using x in this range and the 
 'for' function I was able to calculate the 'sum' without looping.
-I wasn't sure which would be a more efficient use of the program not having the while loop or having 2 or 3 variables. I decided to stick with OPTION 01 while loop that had only 2 variables, but changed the value of 'i' and comment out ## the OPTION 02 for loop with 3 variables, but retained of value of 'i'. I left instruction in comments that if the value of 'i' need to be reatined the OPTION 01 while loop could be commented out (add ## before code) and the OPTION 02 for loop and 'x' variable could be uncommented (remove ## before the code)
+I wasn't sure which would be a more efficient use of the program not having the while loop or having 2 or 3 variables. I decided to stick with OPTION 01 while loop that had only 2 variables, but changed the value of 'i' and comment out ## the OPTION 02 for loop with 3 variables, but retained of value of 'i'. I left instruction in comments that if the value of 'i' need to be retained the OPTION 01 while loop could be commented out (add ## before code) and the OPTION 02 for loop and 'x' variable could be uncommented (remove ## before the code)
 
 I created my github profile and added 'python sumupto.py' version V1_02 to the
-repositry. At the time I didn't know about typing a commit message so first commit
+repository. At the time I didn't know about typing a commit message so first commit
 was missing a message.
 
-2019/02/09
-As advised by Ian, I decided to created this README.md file and updated the file 'python sumupto.py' to version V1_03 ammended some comments and added notes to my references
+### 2019/02/09
+As advised by Ian, I decided to create this README.md file and updated the file 'python sumupto.py' to version V1_03 amended some comments and added notes to my references
 
-2019/02/10
-Updated the file 'python sumupto.py' to version V1_04 ammended some comments
+### 2019/02/10
+Updated the file 'python sumupto.py' to version V1_04 & amended some comments
 
-Code reference sources:
+### 2019/02/17
+Updated the file 'python sumupto.py' to version V1_05 & amended some comments
+
+## Code reference sources:
 1. Dr Ian McLoughlin, GMIT: H Dip in Data Analytics lecture notes,
-   Janurary 2019
+   January 2019
    I adapted the lecture notes while loop to count down to 0 from i so
    that I could leave out a counter variable
 2. 'A Whirlwind Tour of Python': VanderPlas, Jake:
    published by O'Rielly Media Inc. 2016
    Reading first few chapters I adapted shorted version code for adding
-   the sum to it's self and operators '+=' and '-='
+   the sum to itself and operators '+=' and '-='
 3. I adapted code on the following web page to request user to input a value
    and make that value an integer.
    https://anh.cs.luc.edu/python/hands-on/3.1/handsonHtml/io.html
 
 #####################################################################################
 
-Exercise 2 - begins-with-t.py
+# Exercise 2 - begins-with-t.py
 Using python code
 Check if today is a day that begins with the letter 'T'
 (i.e. 'Tuesday' or 'Thursday')
 Outputs 'Yes' if today begins with a 'T'
 Outputs 'No' if today does not begin with a 'T'
 
-2019/02/02
+### 2019/02/02
 I created the first file 'begins-with-t.py' version V1_01 in a folder on my Desktop
 My first thought was that I could possibly adapt code from the Jan 2019 GMIT lecture
 example Python-Tuesday to suit this problem.
@@ -107,9 +110,9 @@ print No.
 I added extra print functions to the text to test what happened to variables when 
 I made tweets to the code. At the end I just added # before these print functions so
 they would not print in the final version of the code, but could be used later if
-the code needed to be ammended.
+the code needed to be amended.
 
-However, I though that this was a boring solution and wanted to shorten it. I noticed
+However, I thought that this was a boring solution and wanted to shorten it. I noticed
 that the problem was really to check if today starts with the letter 'T'. I wondered
 if I could find a function to return the current day of the week as a text string.
 I did a google search and found the following website and adapted some of the code to
@@ -126,21 +129,24 @@ I created an if and else function to test of 'today' begins with a 'T'.
 The revised version of the program worked a treat.
 
 I created my github profile and added 'begins-with-t.py' version V1_01 to the
-repositry. At the time I didn't know about typing a commit message so first commit
+repository. At the time I didn't know about typing a commit message so first commit
 was missing a message.
 
-2019/02/09
-As advised by Ian, I decided to created this README.md file and updated the file 'begins-with-t.py' to version V1_02 ammended some comments and added notes to my references.
+### 2019/02/09
+As advised by Ian, I decided to created this README.md file and updated the file 'begins-with-t.py' to version V1_02 amended some comments and added notes to my references.
 On thinking back maybe 'today' wasn't a good variable name for this program as I have
 read that 'today' may already be defined variable in programming. After more 
 research, I may change this variable name at a later date.
 
-2019/02/10
-Updated the file 'begins-with-t.py' to version V1_03 ammended some comments
+### 2019/02/10
+Updated the file 'begins-with-t.py' to version V1_03 & amended some comments
 
-Code reference sources:
+### 2019/02/17
+Updated the file 'begins-with-t.py' to version V1_04 & amended some comments
+
+## Code reference sources:
 1. Dr Ian McLoughlin, GMIT: H Dip in Data Analytics lecture notes,
-   Janurary 2019
+   January 2019
    I adapted code from the lecture notes example Python-Tuesday for checking
    what todays day of the week is.
 2. 'A Whirlwind Tour of Python': VanderPlas, Jake:
@@ -156,18 +162,18 @@ Code reference sources:
 
 #####################################################################################
 
-Exercise 3 - divisors.py
+# Exercise 3 - divisors.py
 Using python code
 Write a program that prints all numbers between 1,000 and 10,000
 that are divisible by 6 but not 12
 
-2019/02/10
+### 2019/02/10
 I created the first file 'divisors.py' version V1_01 in a folder on my Desktop
 that is now link using git to my github repository 'pands-problem-set'.
 
 My first thought was that I could possibly adapt code from the Jan and Feb 2019 GMIT
 lectures for lecture notes example of for loops and remaining fractions after
-divisions (modulus) and to print numbers when the modulus == 0 after divsion.
+divisions (modulus) and to print numbers when the modulus == 0 after division.
 
 I wanted this program so that it could be modified later to look for other divisors.
 As such, I decided that rather than hard coding the numbers 6 and 12 into the code, 
@@ -178,28 +184,31 @@ later in a modified version of this program. Also I wanted a variable to search 
 
 I created 5 variable 'a', 'b', 's', 'e' and 'x' for 'lower divisor' of 6, 'upper divisor'
 of 12 in the range 'starting' at 1,000 and 'ending' at 10,000 with 'x' to search the
-range. I also wanted to use the multiple assigment and line break '/n' print statement, I
+range. I also wanted to use the multiple assignment and line break '/n' print statement, I
 learned in the GMIT week 3 lecture videos.
 
 I wrote a temporary print statement check what the divisors and range would be.
 Afterward I added a # to comment out the print statement, while saving it for later.
 
-I wrote a for loop to check if to check values in range 's' to 'e' forfill the
-TRUE condition = "divisable by 'a' but not by 'b'"
+I wrote a for loop to check if to check values in range 's' to 'e' fulfil the
+TRUE condition = "divisible by 'a' but not by 'b'"
 I used 'x' to search the range and print the number when the required condition
 TRUE. The end of the range has to extended by +1 to ensure that the value of 'e'
 is also checked for the TRUE condition.
 
 The program works. I spot checked few of the output values and all the values I check
-were divisable by 6 ('a') but returned a 0.5 remainer when divided by 12 ('b').
-I added 'divisors.py' version V1_01 to git and uploaded to my github repositry.
+were divisible by 6 ('a') but returned a 0.5 remainder when divided by 12 ('b').
+I added 'divisors.py' version V1_01 to git and uploaded to my github repository.
 
-Code reference sources:
+### 2019/02/17
+Updated the file 'divisors.py' to version V1_02 & amended some comments
+
+## Code reference sources:
 1. Dr Ian McLoughlin, GMIT: H Dip in Data Analytics lecture notes,
-   Janurary and February 2019
+   January and February 2019
    I adapted code from the lecture notes example of 'for' loops and remaining
-   fractions after divisions and to print numbers when modulus = 0 after divsion
-   I also adated code for print statement over multiple line "\n"
+   fractions after divisions and to print numbers when modulus = 0 after division
+   I also adapted code for print statement over multiple line "\n"
 2. 'A Whirlwind Tour of Python': VanderPlas, Jake:
    published by O'Rielly Media Inc. 2016
    Reading first few chapters I adapted code for modulus if and elif for use
@@ -207,40 +216,40 @@ Code reference sources:
 
 #####################################################################################
 
-Exercise 4 - collatz.py
+# Exercise 4 - collatz.py
 Using python code
 Write a program that
-1. Asks a user to input any positive integar and
-2. Outputs the sucessive values of the following calculation
+1. Asks a user to input any positive integer and
+2. Outputs the successive values of the following calculation
 3. At each step calculate the next value by taking the current value and
 4. if it even, divide it by 2 
 5. but if it odd, multiply it by three and add one
 6. End the program when the current value it one.
 
-2019/02/10
+### 2019/02/10
 I created the first file 'collatz.py' version V1_01 in a folder on my Desktop
 that is now link using git to my github repository 'pands-problem-set'.
 
 My first thought was that I could possibly adapt code I wrote for Exercise 1
-'sumupto.py' to ask user for a positive integar. That cover part 1 of the program
+'sumupto.py' to ask user for a positive integer. That cover part 1 of the program
 Also i could use part of the modulus part of the code from Exercise 3 'divisors.py'
-to check if the calculated value is even or odd by checking the modulas after 
+to check if the calculated value is even or odd by checking the modulus after 
 dividing by 2 is = 0
 
-As with 'sumupto.py' I found that as I specified an integar type input, if the
+As with 'sumupto.py' I found that as I specified an integer type input, if the
 user entered a string or float the program would automatically give an error 
 so I decided that I didn't need to write a test loop if the number entered was 
 not an integer.
-However I didn't want a negative or zero integar so I wrote a loop to give an 
+However I didn't want a negative or zero integer so I wrote a loop to give an 
 error message if a number less than 1 was entered and to keep requesting a 
-positive integar.
+positive integer.
 
 I figured the best way to save this calculated data was to create a list and keep
 using the last digit in the list to cycle through the list and keep appending the
 data to the end of the list. This way I could print the list at the end of the 
 program
 
-I created a variable 'i' to store the inputed and apply the
+I created a variable 'i' to store the inputted and apply the
 calculation to. I created a list 'l' to store the calculated values in and to
 print at the end.
 
@@ -252,10 +261,10 @@ In each loop I used the list.append(i) command to add the value of 'i' to the
 end of the list and checked last value in the list to see if it equals 1.
 
 The program worked, but the output was a in a list format if the print(l) command was
-used. eg for starting at integar 10, output is [10, 5.0, 16.0, 8.0, 4.0, 2.0, 1.0]
-I noticed that the output of the even number division was a float instead of integar.
+used. eg for starting at integer 10, output is [10, 5.0, 16.0, 8.0, 4.0, 2.0, 1.0]
+I noticed that the output of the even number division was a float instead of integer.
 I added the i = int() function in the previous loop to force the even number division
-into an integar. I think the float divsion // may have had the same effect.
+into an integer. I think the float division // may have had the same effect.
 
 I then needed to extract the values from the list 'l' and print them in a line
 to get the same text as shown in the exercise.
@@ -264,25 +273,28 @@ https://docs.python.org/3/tutorial/introduction.html#lists
 in a 'while' loop to create a 'for' loop to print all the values in the list 'l' with a
 space separator only print( , end=' ')
 
-The program works. I added 'collatz.py' version V1_01 to git and uploaded to my github repositry.
+The program works. I added 'collatz.py' version V1_01 to git and uploaded to my github repository.
 
-I updated the file file 'collatz.py' version V1_02 updated some of the comments and
-uploaded it to my github repositry.
+I updated the file file 'collatz.py' version V1_02 & updated some of the comments and
+uploaded it to my github repository.
 
-Code reference sources:
+### 2019/02/17
+Updated the file 'collatz.py' to version V1_03 & amended some comments
+
+## Code reference sources:
 1. Dr Ian McLoughlin, GMIT: H Dip in Data Analytics lecture notes,
    Janurary and Febrary 2019
    I adapted the lecture notes while loop and discussion about lists
    and the appending items to lists.
 2. Mark Cotter February 2019 code for Exercise 1 'sumupto.py' and Exercise 3
-   divisors.py asking user to input a positive integar check if it even or odd
+   divisors.py asking user to input a positive integer check if it even or odd
    by checking the modulas after dividing by 2 is = 0
 3. 'A Whirlwind Tour of Python': VanderPlas, Jake:
    published by O'Rielly Media Inc. 2016
    Reading first few chapters I adapted code for not equal to != if and
    elif for use in this program.
-4. I adpated code the the folowing python tutorial webpage about lists
-   and appending list. I adpated code in a 'while' loop to create a 'for' loop
+4. I adapted code from the following python tutorial webpage about lists
+   and appending list. I adapted code in a 'while' loop to create a 'for' loop
    to print all the values in the list 'l' with a space separator only
    print( , end=' ')
    https://docs.python.org/3/tutorial/introduction.html#lists

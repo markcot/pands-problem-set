@@ -1,4 +1,7 @@
-# Mark Cotter, V1_01, 2019-02-10
+# Mark Cotter, V1_02 2019-02-17
+
+# V1_02 - 2019-02-10
+# Comments updated
 
 # V1_01 - Program created 2019-02-10
 
@@ -7,7 +10,7 @@
 
 # Assign variable 'a', 'b', 's' and 'e' for 'lower divisor' of 6,
 # 'upper divisor' of 12 in the range 'starting' at 1,000 and 'ending' at 10,000
-# Also use variable 'x' to search in the rande of 's' to 'e'.
+# Also use variable 'x' to search in the range of 's' to 'e'.
 (a, b, s, e, x) = (6, 12, 1000, 10000, 1)
 
 # Check print of values to be used
@@ -15,8 +18,8 @@
 #    "The upper divisor is", b, "\n"
 #    "The range is from", s, "to", e)
 
-# Check values in range 's' to 'e' forfill the
-# TRUE condition = "divisable by 'a' but not by 'b'"
+# Check values in range 's' to 'e' fulfil the
+# TRUE condition = "divisible by 'a' but not by 'b'"
 # eg if the modulus when dividing 'x' by 'a' is = 0 and if the modulus of 
 # dividing 'x' by 'b' is greater than zero.
 # Use 'x' to search the range and print the number when the required condition
@@ -29,10 +32,10 @@ for x in range(s, (e + 1)):
 
 # Code reference sources:
 # 1. Dr Ian McLoughlin, GMIT: H Dip in Data Analytics lecture notes,
-#    Janurary and February 2019
+#    January and February 2019
 #    I adapted code from the lecture notes example of 'for' loops and remaining
-#    fractions after divisions and to print numbers when modulus = 0 after divsion
-#    I also adated code for print statement over multiple line "\n"
+#    fractions after divisions and to print numbers when modulus = 0 after division
+#    I also adapted code for print statement over multiple line "\n"
 # 2. 'A Whirlwind Tour of Python': VanderPlas, Jake:
 #    published by O'Rielly Media Inc. 2016
 #    Reading first few chapters I adapted code for modulus if and elif for use

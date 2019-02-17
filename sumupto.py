@@ -1,8 +1,11 @@
-# Mark Cotter, V1_04, 2019-02-10
+# Mark Cotter, V1_05, 2019-02-17
 
 # Requests user to enter a positive integer 'i'
 # The 'sum' of numbers between 1 and the 
-# entered value of 'i' is outputed
+# entered value of 'i' is outputted
+
+# V1_05 update 2019-02-17
+# Comments updated
 
 # V1_04 update 2019-02-10
 # Comments updated
@@ -17,20 +20,19 @@
 
 # V1_01 - Program created 2019-02-01
 
-# Set intial states for variables 'i', 'x' and 'sum'
-i = 1
-sum = 0
+# Set initial states for variables 'i', 'x' and 'sum'
+(i,sum) = (1,0)
 # Additional OPTION 02 variable
 ##x = 0
 
 # Request user to enter a positive integer and assign the value to 'i'
-# Inputed value has to be an integer type value (not a float or string)
+# Inputted value has to be an integer type value (not a float or string)
 i = int(input("Please enter a positive integer: "))
 
-# Check if inputed value for 'i' is a positive integer
-# Loop until a positive integar is entered
+# Check if inputted value for 'i' is a positive integer
+# Loop until a positive non-zero integer is entered
 while i < 1:
-# Print error if inputed value for 'i' is not a positive integer
+# Print error if inputted value for 'i' is not a positive integer
     print("Input error -->",i,"<-- is not a positive integer")
 # Request user to enter a new positive integer
     i = int(input("Please enter a positive integer: "))
@@ -57,7 +59,7 @@ print(sum)
 
 # Code reference sources:
 # 1. Dr Ian McLoughlin, GMIT: H Dip in Data Analytics lecture notes,
-#    Janurary 2019
+#    January 2019
 #    I adapted the lecture notes while loop to count down to 0 from i so
 #    that I could leave out a counter variable
 # 2. 'A Whirlwind Tour of Python': VanderPlas, Jake:
