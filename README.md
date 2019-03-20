@@ -368,7 +368,12 @@ I will assume that I will not have to check if the text entered and not
 have to check if it is a integer or float type.
 I may have to strip full stops and commas to get the program to work
 
+From the following website, I found that it is better to replace commas
+in the string rather than striping them
+https://stackoverflow.com/questions/16233593/how-to-strip-comma-in-python-string
 
+As with Exercise 4 - collatz.py I used the same code to print the result array 'r'
+in a single line.
 
 
 
