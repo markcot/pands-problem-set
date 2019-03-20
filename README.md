@@ -372,8 +372,27 @@ From the following website, I found that it is better to replace commas
 in the string rather than striping them
 https://stackoverflow.com/questions/16233593/how-to-strip-comma-in-python-string
 
+To split the sentence into an array I used code referenced in GMIT H Dip Data
+Analytics lecture video Week 7 - March 2019 &
+https://docs.python.org/3/library/stdtypes.html#text-sequence-type-str
+
 As with Exercise 4 - collatz.py I used the same code to print the result array 'r'
 in a single line.
+
+I taught I might be able to remove one of the loops at the end by adapting the
+while loop into a for loop. This would also use one less variable. This change worked
+and I was able to remove the array 'a'.
+
+I did notice during testing that if a float number is entered such as 1.0,
+the point is removed from between the 0 and 1, but as this program is for
+sentences I did not think that this issue needed to be addressed.
+
+I deleted the unused code, saved the file and made the last commit for version
+V1_01 of 'secondstring.py'.
+
+#####################################################################################
+
+
 
 
 
