@@ -349,6 +349,24 @@ The program works. I added 'primes.py' version V1_01 to git and uploaded to my g
     to use a for loop and break to check if a number is a prime
 
 
+#####################################################################################
+
+## Exercise 6 - secondstring.py
+Using python code
+Write a program that takes a user input string and outputs every second word.
+
+### 2019/03/20
+I created the first file 'secondstring.py' version V1_01 in a folder on my Desktop that is linked using git to my github repository 'pands-problem-set'.
+
+My first thought is store the string and to split is into an array using the
+str.split() from Week 7 lecture notes.
+Then use a while loop to cycle through every second item in the array
+and print the result.
+The sentence could be long so I'll it the length open ended.
+I have to specify that the separator as a white space character.
+I will assume that I will not have to check if the text entered and not
+have to check if it is a integer or float type.
+I may have to strip full stops and commas to get the program to work
 
 
 
