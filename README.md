@@ -443,10 +443,35 @@ acceptable.
 I will use 'num' as the variable for the entered number and 'root' as the
 variable for the approximation of the square root of 'num'
 
+#####################################################################################
+
+## Exercise 8 - Datetime.py
+Using python code
+Write a program that that outputs today's date and time in the format
+"Monday, January 10th 2019 at 1:15pm".
+
+### 2019/03/21
+I created the first file 'Datetime.py' version V1_01 in a folder on my Desktop that is linked using git to my github repository 'pands-problem-set'. I had to rename
+the file with a capital D as the lower case datetime is already a function, so I
+couldn't call the function datetime in the script and call the file datetime.py as
+the name.
+I found out from the following website that there is an issue with datetime being
+both the module name and module class.
+https://stackoverflow.com/questions/15707532/python-import-datetime-v-s-from-datetime-import-datetime
+I imported the datetime module and use the abbreviation 'dt'
+
+My first thought was to use some of the datetime functions highlighted in Week 6
+lecture and on the Python online library
+https://docs.python.org/3/library/datetime.html for printing the various format
+year month day and time based on the datetime module
+
+I got the program working, but I found 2 problems 
+1) Getting the st, nd, rd or th to display after the day for 1st, 2nd, 3rd, 4th, etc.
+2) To get the PM after the minutes to display as lower case.
+I may need a few if loops prior to the printing the information
 
 
-
-
+#####################################################################################
 
 
 
