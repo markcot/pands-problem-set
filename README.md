@@ -392,6 +392,60 @@ V1_01 of 'secondstring.py'.
 
 #####################################################################################
 
+## Exercise 7 - squareroot.py
+Using python code
+Write a program that that takes a positive ﬂoating point number as input and
+outputs an approximation of its square root.
+
+### 2019/03/21
+I created the first file 'squareroot.py' version V1_01 in a folder on my Desktop that is linked using git to my github repository 'pands-problem-set'.
+
+First I need to ask a user to input a positive floating point number
+Then I need to check that the number is positive, >= 0
+I could reuse some code modified from the previous exercises to achieve this.
+I did not create a loop for checking if a non-number text was entered by the
+user, but this could be added later if needed. 
+I was thinking of defining a function to ask the user for the input so that
+I would have to write less code when checking what the user input is acceptable,but the amount of code is less for not using a function in this case.
+
+To calculate the square root I was thinking of using the power function 
+x = 9, x ** 0.5 which would give the square root, but this would give the exact
+square root of the number. I was thinking about it for a while and was
+wondering if I could guess a number less than the inputted number. By dividing
+the the guess into the inputted number, using a loop I could try and get a 
+better approximation of the number.
+In the week 8 lecture, using Newton's method was discussed, which looked like
+a good method for calculating the square root. I did some searching online
+and came across another version of Newton's method called the 
+Babylonian square-root algorithm on webpage
+https://blogs.sas.com/content/iml/2016/05/16/babylonian-square-roots.html
+
+S = any positive number
+To find the square root of S, you need to make an initial guess
+x0 = first guess
+x1 = next improved guess using the formula
+x1 = (x0 + S/x0)/2
+
+I decided to try the Babylonian square-root algorithm method and use the
+inputed number divided by 2 as the first guess.
+
+I noticed that the problem asks for the approximate square root and only
+one decimal place is shown. As such I decided to print resulting square
+root to one decimal place only. The website highlight the python round function
+https://stackoverflow.com/questions/13479163/round-float-to-x-decimals/22155830
+This website also discusses the fact the round() function does not round 
+correctly
+E.g. 'round(55.15,1)' is rounded to 55.1, but it should round up to 55.2
+     'round(55.16,1)' is rounded to 55.2
+However for an this approximation of square root, this level of accuracy is
+acceptable.
+
+I will use 'num' as the variable for the entered number and 'root' as the
+variable for the approximation of the square root of 'num'
+
+
+
+
 
 
 
