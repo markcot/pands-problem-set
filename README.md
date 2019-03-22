@@ -467,9 +467,32 @@ year month day and time based on the datetime module
 
 I got the program working, but I found 2 problems 
 1) Getting the st, nd, rd or th to display after the day for 1st, 2nd, 3rd, 4th, etc.
-2) To get the PM after the minutes to display as lower case.
+2) To get the PM after the minutes to display as lower case and removing the leading
+   zero from the hour.
+
 I may need a few if loops prior to the printing the information
 
+### 2019/03/22
+The following websites have a few methods of adding the day suffix st, nd, rd or th
+https://stackoverflow.com/questions/5891555/display-the-date-like-may-5th-using-pythons-strftime
+
+https://stackoverflow.com/questions/3644417/python-format-datetime-with-st-nd-rd-th-english-ordinal-suffix-like
+
+The following website has some ideas on changing the pm/am time to lower case and
+removing the leading zero from the hour. (Get “2:35pm” instead of “02:35PM”)
+https://stackoverflow.com/questions/2925230/get-235pm-instead-of-0235pm-from-python-date-time
+
+The following webpage also has a guide for the datetime function strftime
+https://linux.die.net/man/3/strftime
+However the lowercase function "%P" for pm/am does not appear to work for me.
+
+I think it is best to split up the time into separate string variables. Manipulate
+the text as needed and print the result as formated string.
+I convert the day of the month and hour into integers to remove the leading zeros
+and to check what suffix I needed to add to the end of the day of the month.
+For the if loop checking the day of the month,I found that the or between the number
+did not give the desired result, (1 or 21 or 31), but the or symbol | did.
+I must investigate this further.
 
 #####################################################################################
 
