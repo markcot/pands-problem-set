@@ -447,7 +447,7 @@ variable for the approximation of the square root of 'num'
 
 ## Exercise 8 - Datetime.py
 Using python code
-Write a program that that outputs today's date and time in the format
+Write a program that outputs today's date and time in the format
 "Monday, January 10th 2019 at 1:15pm".
 
 ### 2019/03/21
@@ -472,7 +472,8 @@ I got the program working, but I found 2 problems
 
 I may need a few if loops prior to the printing the information
 
-### 2019/03/22
+### 2019/03/22 (a)
+I updated the program to version V1_02
 The following websites have a few methods of adding the day suffix st, nd, rd or th
 https://stackoverflow.com/questions/5891555/display-the-date-like-may-5th-using-pythons-strftime
 
@@ -494,8 +495,29 @@ For the if loop checking the day of the month,I found that the or between the nu
 did not give the desired result, (1 or 21 or 31), but the or symbol | did.
 I must investigate this further.
 
+### 2019/03/22 (b)
+I updated the program to version V1_03
+I changed the format of the if and elif checking for the suffix of the day of the
+month, because further testing should that the desired result was not printing
+correctly of a number of different day of the month. The if statements were only
+looking at the first number in the line '1 or 21 or 31' and was not checking the
+other options correctly. As there were only a few combinations I wrote if or elif
+statements of each of the alternative values 1, 2, 3, 21, 22, 23 and 31. The other
+numbers in the month all have the suffix 'th'.
+Final issue upload to Git hub.
+
 #####################################################################################
 
+## Exercise 9 - second.py
+Using python code
+Write a program that reads in a text ﬁle and outputs every second line. The program
+should take the filename from an argument on the command line.
+
+### 2019/03/22
+I created the first file 'second.py' version V1_01 in a folder on my Desktop that is linked using git to my github repository 'pands-problem-set'.
+
+I download a section of the first chapter of the moby dick novel from the following
+website http://www.gutenberg.org/files/2701/2701-0.txt
 
 
 
