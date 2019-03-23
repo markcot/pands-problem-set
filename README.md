@@ -582,7 +582,7 @@ Using python code
 Write a program that displays a plot of the functions x, x^2 and 2^x in the
 range [0, 4].
 
-### 2019/03/23
+### 2019/03/23 (a)
 I created the first file 'plotfunction.py' version V1_01 in a folder on my Desktop that is linked using git to my github repository 'pands-problem-set'.
 
 I noticed that the scope is for a single plot with all three function
@@ -592,3 +592,25 @@ to display on a single plot.
 
 I decided to create an array x in the range 0 to 4, an array s of the square of the
 numbers x and an array p for 2 to the power of the numbers in x.
+I used a range function to generate x and for loops the content of square of x and
+2 to power of x
+
+### 2019/03/23 (b)
+I changed the creation method for the x, x^2 and 2^x using the numpy.arange function
+I found on webpage https://physics.nyu.edu/pine/pymanual/html/chap3/chap3_arrays.html
+This allowed me to generate x^2 and 2^x using simple math formulae.
+
+However, I did noticed a significant slowdown in the run time when I import numpy
+ans again when I imported matplotlib.pyplot into python.
+
+I adapted code matplotlib.pyplot.plot function from
+https://matplotlib.org/users/pyplot_tutorial.html
+to plot the three functions x, x^2 and 2^x and 3 different colours on the
+same graph and to give the graph labels.
+
+I adapted code from the following website to edit x axis interval
+https://stackoverflow.com/questions/12608788/changing-the-tick-frequency-on-x-or-y-axis-in-matplotlib
+
+Version V1_02 of the program created and uploaded to github.
+
+#####################################################################################
