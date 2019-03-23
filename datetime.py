@@ -1,5 +1,9 @@
 # Exercise 8 - Datetime.py
-# Mark Cotter, V1_03, 2019-03-22
+# Mark Cotter, V1_04, 2019-03-23
+
+# V1_04 - 2019-02-23
+# Variables initial values added
+# Minor comments added
 
 # V1_03 - 2019-02-22
 # Amendment made to day of month suffix.
@@ -20,28 +24,42 @@
 # 'datetime.py'
 import datetime as dt
 
+# Initial variable values for 'year' 'month' 'day' 'suffix' 'weekday' 'hour'
+# 'minute' and 'ampm'
+year = 2019
+month = "January"
+day = 1
+suffix = "st"
+weekday = "Monday"
+hour = 0
+minute = "00"
+ampm = "am"
+
 # Set variable 't' to current time
 # Code adapted for printing the various year month day and time from webpage
 # https://docs.python.org/3/library/datetime.html#datetime.datetime.fromtimestamp
+# and Exercise 2 - begins-with-t.py
 
-# Set 'weekday' to current day of the week
-weekday = str(dt.datetime.now().strftime("%A"))
-# Set 'month' to current month
+# Set 'year' to current year, int because will always be 4 digits
+year = int(dt.datetime.now().strftime("%Y"))
+# Set 'month' to current month, str because is a word
 month = str(dt.datetime.now().strftime("%B"))
-# Set 'day' to current day of the month, set to int for reviewing suffix
+# Set 'day' to current day of the month, int for reviewing suffix & removing lead 0
 day = int(dt.datetime.now().strftime("%d"))
-# Set day suffix to 'th' by default
-suffix = "th"
-# Set 'year' to current year
-year = str(dt.datetime.now().strftime("%Y"))
-# Set 'hour' to current hour, set to int to remove leading zero
+# Set 'weekday' to current day of the week, str because is a word
+weekday = str(dt.datetime.now().strftime("%A"))
+# Set 'hour' to current hour, int to remove leading zero
 hour = int(dt.datetime.now().strftime("%I"))
-# Set 'minute' to current minute
+# Set 'minute' to current minute, str because always want 2 digits
 minute = str(dt.datetime.now().strftime("%M"))
-# Set 'ampm' to current 12 clock morning or evening AM or PM
+# Set 'ampm' to current 12 clock morning or evening i.e. 'AM' or 'PM'
 ampm = str(dt.datetime.now().strftime("%p"))
 
-# Test for suffix change
+# Set AM or PM to lower case
+# Code adapted from Week 7 lecture
+ampm = ampm.lower()
+
+# Temporary variable setting for suffix change test
 #day = 31
 
 # Add suffix to the day of the month
@@ -68,10 +86,6 @@ elif day == 31:
     suffix = "st"
 else:
     suffix = "th"
-
-# Set AM or PM to lower case
-# Code adapted from Week 7 lecture
-ampm = ampm.lower()
 
 # Prints the result
 print(f"{weekday}, {month} {day}{suffix} {year} at {hour}:{minute}{ampm}")

@@ -463,7 +463,8 @@ I imported the datetime module and use the abbreviation 'dt'
 My first thought was to use some of the datetime functions highlighted in Week 6
 lecture and on the Python online library
 https://docs.python.org/3/library/datetime.html for printing the various format
-year month day and time based on the datetime module
+year month day and time based on the datetime module and used in Exercise 2 -
+begins-with-t.py
 
 I got the program working, but I found 2 problems 
 1) Getting the st, nd, rd or th to display after the day for 1st, 2nd, 3rd, 4th, etc.
@@ -505,6 +506,10 @@ other options correctly. As there were only a few combinations I wrote if or eli
 statements of each of the alternative values 1, 2, 3, 21, 22, 23 and 31. The other
 numbers in the month all have the suffix 'th'.
 Final issue upload to Git hub.
+
+### 2019/03/23
+Variables initial values added and minor comments added version V1_04 created.
+Code rearranged to make easier to read.
 
 #####################################################################################
 
