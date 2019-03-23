@@ -525,7 +525,7 @@ I download a section of the first chapter of the moby dick novel from the follow
 website http://www.gutenberg.org/files/2701/2701-0.txt and saved it my folder as
 moby-dick.txt
 
-### 2019/03/23
+### 2019/03/23 (a)
 First I was thinking about how to load a file from the command line 
 Looking at the Python reference website page on file inputs
 https://docs.python.org/3/library/fileinput.html
@@ -544,4 +544,22 @@ I added a counter 'i' and an if statement to only print every second line.
 I had to change some of the -- and ' from the downloaded file because python was
 reading them as strange looking characters.
 Version updated to V1_02.
+
+### 2019/03/23 (b)
+
+Added some additional comments
+The 2 in the if statement condition (i % 2 == 0) can be changed to 3, 4, etc.
+if every third, fourth, etc. lines are needed.
+
+Using the filename and not specifying a filename within the argument input(), 
+python reads the filename given after the program name. This is gives the
+desired result and reads the moby-dick.txt entered in the command line after
+the program name.
+The filename has to be specified after the program name.
+I.e. 'python second.py moby-dick.txt'
+Otherwise the program will run on an infinite loop
+
+Version V1_03 of the program created and uploaded to github.
+
+#####################################################################################
 
