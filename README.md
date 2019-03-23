@@ -561,5 +561,19 @@ Otherwise the program will run on an infinite loop
 
 Version V1_03 of the program created and uploaded to github.
 
+### 2019/03/23 (c)
+
+After watching the Week 9 lecture I can see that the sys.argv is a better way of 
+reading the mody-dick.txt file into the program so I decided to change the input
+method and use the same checking if statement used in Week 9 lecture to check
+if only 2 arguments are used when calling up this program second.py.
+
+I note that I had to use the format open command with curly brackets around the
+placeholder for the 'sys.argv[1]' for the code to read the text as moby-dick.txt
+Now the program does not run an infinite loop if no file name is added after
+python second.py on the command line.
+
+Version V1_04 of the program created and uploaded to github.
+
 #####################################################################################
 

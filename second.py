@@ -1,5 +1,9 @@
 # Exercise 9 - second.py
-# Mark Cotter, V1_03, 2019-03-23
+# Mark Cotter, V1_04, 2019-03-23
+
+# V1_04 - 2019-03-23
+# File input changed to use sys.args to callup the reading of the file
+# Error check if text filename is missing from the command line input
 
 # V1_03 - 2019-03-23
 # Minor amendment made to if loop and i variable
@@ -14,7 +18,7 @@
 # takes the filename from an argument on the command line.
 # The filename has to be specified after the program name.
 # I.e. 'python second.py moby-dick.txt'
-# Otherwise the program will run on an infinite loop
+# Otherwise the program will output an Error message
 
 # variable counter i
 i = 0
@@ -27,22 +31,37 @@ i = 0
 # https://docs.python.org/3/library/fileinput.html
 # Code adapted from Week 7 lecture to open a file and from website
 # https://docs.python.org/3/tutorial/inputoutput.html#reading-and-writing-files
-import fileinput
-# Not specifying a filename within the argument input() reads the filename after
-# the program name
-with fileinput.input() as f:
-    # For each line in file f print the line
-    for line in f:
-        # Remove additional line breaks
-        # Code adapted from Week 7 lecture
-        line = line.rstrip("\n")
-        # check for start of every second line, starting with first line as 0
-        # The 2 below can be changed to 3, 4, etc. if every third, fourth, etc.
-        # lines are needed
-        if i % 2 == 0:
-            # print the every second line
-            print(line)
-        # increment i
-        i += 1
-# closes the file f
-f.close()
+
+# Opens the python sys module
+# Code verbatim from Week 9 lecture example of command line arguments in python
+import sys
+
+# Test to check if number of arguments supplied is = 2
+# Code adapted from Week 9 lecture example
+if len(sys.argv) != 2:
+    # print error message and the program does nothing
+    print("INPUT ERROR: You should supply a single filename for input.")
+else:
+    # Otherwise do the following
+    # Open the file at the second argument called on the command line
+    # i.e. the text file as read only
+    # The formated code with {} refers to the second argument of the python
+    # list on the command line do the open command opens the first file after
+    # python second.py ... on the command line.
+    # Code adapted from Week 7 and 9 lectures
+    with open(f'{sys.argv[1]}', 'r') as f:
+        # For each line in file f read the line
+        for line in f:
+            # Remove additional line breaks
+            # Code adapted from Week 7 lecture
+            line = line.rstrip("\n")
+            # check for start of every second line, starting with first line as 0
+            # The 2 below can be changed to 3, 4, etc. if every third, fourth, etc.
+            # lines are needed
+            if i % 2 == 0:
+                # print the every second line starting with the first line
+                print(line)
+            # increment i
+            i += 1
+    # closes the file f
+    f.close()
