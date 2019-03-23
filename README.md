@@ -577,3 +577,18 @@ Version V1_04 of the program created and uploaded to github.
 
 #####################################################################################
 
+## Exercise 10 - second.py
+Using python code
+Write a program that displays a plot of the functions x, x^2 and 2^x in the
+range [0, 4].
+
+### 2019/03/23
+I created the first file 'plotfunction.py' version V1_01 in a folder on my Desktop that is linked using git to my github repository 'pands-problem-set'.
+
+I noticed that the scope is for a single plot with all three function
+(x, x^2 and 2^x) shown. Week 9 lecture about matplotlib.pyplot seemed the ideal
+for use in this problem. I would have to figure out how to get all three functions
+to display on a single plot.
+
+I decided to create an array x in the range 0 to 4, an array s of the square of the
+numbers x and an array p for 2 to the power of the numbers in x.
