@@ -522,8 +522,26 @@ should take the filename from an argument on the command line.
 I created the first file 'second.py' version V1_01 in a folder on my Desktop that is linked using git to my github repository 'pands-problem-set'.
 
 I download a section of the first chapter of the moby dick novel from the following
-website http://www.gutenberg.org/files/2701/2701-0.txt
+website http://www.gutenberg.org/files/2701/2701-0.txt and saved it my folder as
+moby-dick.txt
 
+### 2019/03/23
+First I was thinking about how to load a file from the command line 
+Looking at the Python reference website page on file inputs
+https://docs.python.org/3/library/fileinput.html
+I tried to adapt some of the code from the page to input the file.
+I found this website and tried to adapt some code from it.
+https://stackoverflow.com/questions/7033987/python-get-files-from-command-line
 
+I found it difficult to figure out how to select the input file directly from the
+command line so I decided to come back to the file input part and focus on
+outputting every second line of the file for now.
+I adapted code from Week 7 lecture for input files from the same folder and remove
+additional line breaks and from website
+https://docs.python.org/3/tutorial/inputoutput.html#reading-and-writing-files
+I added a counter 'i' and an if statement to only print every second line.
 
+I had to change some of the -- and ' from the downloaded file because python was
+reading them as strange looking characters.
+Version updated to V1_02.
 
