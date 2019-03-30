@@ -1,5 +1,8 @@
-# Exercise 4 - collatz.py
-# Mark Cotter, V1_02, 2019-03-30
+# Exercise 5 - primes.py
+# Mark Cotter, V1_03, 2019-03-30
+
+# V1_03 - 2019-03-30
+# Comments updated.
 
 # V1_02 - 2019-03-30
 # Removed the loop for continuosly requesting new values for 'i'.
@@ -55,11 +58,11 @@ try:
                 # a divisor of 'num' between 2 and 'num'
                 # the 'num' value must be a prime number
                 print("That is a prime.")
-    # Otherwise prints a VALUE error message if 'i' is not a positive integer
+    # Otherwise prints a VALUE error message if 'num' is not a positive integer
     else:
         print("Input Error: -->", num, "<-- is not a positive integer.")
 
-# Prints a TYPE exception error if 'i' not an integer
+# Prints a TYPE exception error if 'num' not an integer
 except:
     print("Input Error: -->", num, "<-- is not an integer type.")
 

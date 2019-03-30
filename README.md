@@ -386,7 +386,7 @@ The program cycle through the range of values between 2 and 'num'. I used a vari
 
 The program works. I added 'primes.py' version V1_01 to git and uploaded to my github repository.
 
-### 2019/03/30
+### 2019/03/30 (a)
 
 I remove the int() from input() request function so that I could check later check
 if the inputted value was correct, without having to loop a continuous request for a
@@ -400,6 +400,10 @@ message is displayed and the program does not compute anything.
 I added print statements if the positive integer inputted is not a prime.
 
 Amended some comments and updated the file 'primes.py' to version V1_02
+
+### 2019/03/30 (b)
+
+Amended some comments and updated the file 'primes.py' to version V1_03
 
 ## Code reference sources:
  1. Mark Cotter February 2019 code for Exercise 1 'sumupto.py' asking user
@@ -425,9 +429,9 @@ Write a program that takes a user input string and outputs every second word.
 ### 2019/03/20
 I created the first file 'secondstring.py' version V1_01 in a folder on my Desktop that is linked using git to my github repository 'pands-problem-set'.
 
-My first thought is store the string and to split is into an array using the
+My first thought is store the string and to split is into an list using the
 str.split() from Week 7 lecture notes.
-Then use a while loop to cycle through every second item in the array
+Then use a while loop to cycle through every second item in the list
 and print the result.
 The sentence could be long so I'll it the length open ended.
 I have to specify that the separator as a white space character.
@@ -439,16 +443,16 @@ From the following website, I found that it is better to replace commas
 in the string rather than striping them
 https://stackoverflow.com/questions/16233593/how-to-strip-comma-in-python-string
 
-To split the sentence into an array I used code referenced in GMIT H Dip Data
+To split the sentence into an list I used code referenced in GMIT H Dip Data
 Analytics lecture video Week 7 - March 2019 &
 https://docs.python.org/3/library/stdtypes.html#text-sequence-type-str
 
-As with Exercise 4 - collatz.py I used the same code to print the result array 'r'
+As with Exercise 4 - collatz.py I used the same code to print the result list 'r'
 in a single line.
 
 I taught I might be able to remove one of the loops at the end by adapting the
 while loop into a for loop. This would also use one less variable. This change worked
-and I was able to remove the array 'a'.
+and I was able to remove the list 'a'.
 
 I did notice during testing that if a float number is entered such as 1.0,
 the point is removed from between the 0 and 1, but as this program is for
@@ -456,6 +460,25 @@ sentences I did not think that this issue needed to be addressed.
 
 I deleted the unused code, saved the file and made the last commit for version
 V1_01 of 'secondstring.py'.
+
+### 2019/03/30
+
+Amended some comments and updated the file 'secondstring.py' to version V1_02
+
+## Code reference sources:
+1. Mark Cotter February 2019 code for Exercise 1 'sumupto.py' asking user
+   to input a positive integer or string. 
+
+2. Code for replacing commas and full-stops adapted from website 
+   https://stackoverflow.com/questions/16233593/how-to-strip-comma-in-python-string
+
+3. Code for spliting the sentence into an list adapted from GMIT H Dip Data
+   Analytics lecture video Week 7 - March 2019 & website
+   https://docs.python.org/3/library/stdtypes.html#text-sequence-type-str
+
+4. Mark Cotter February 2019 code for Exercise 4 - collatz.py' for print from
+   an list onto one line.
+
 
 #####################################################################################
 
