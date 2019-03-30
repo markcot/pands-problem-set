@@ -1,5 +1,5 @@
 # pands-problem-set
-GMIT problem set for Programming and Scripting Module 2019
+## GMIT problem set for Programming and Scripting Module 2019
 #### Created by: Mark Cotter, Email: g00376335@gmit.ie
 ### LAST UPDATED 2019-03-30
 
@@ -181,7 +181,7 @@ Updated the file 'begins-with-t.py' to version V1_05 & amended some comments
 3. I adapted code from the following webpage to return a string for the
    current day of the week
    https://stackoverflow.com/questions/9847213/how-do-i-get-the-day-of-week-given-a-date-in-python
-   
+
 4. I adapted code from the following webpage to return the first character
    of a text string. This was covered also in a later GMIT lecture
    https://stackoverflow.com/questions/7108080/python-get-the-first-character-of-the-first-string-in-a-list
@@ -230,12 +230,16 @@ I added 'divisors.py' version V1_01 to git and uploaded to my github repository.
 Updated the file 'divisors.py' to version V1_02, amended some comments
 and if statement '&' replaced with 'and'. Changed variable 'x' to 'i'
 
+### 2019/03/30
+Updated the file 'divisors.py' to version V1_03, amended some comments
+
 ## Code reference sources:
 1. Dr Ian McLoughlin, GMIT: H Dip in Data Analytics lecture notes,
    January and February 2019
    I adapted code from the lecture notes example of 'for' loops and remaining
    fractions after divisions and to print numbers when modulus = 0 after division
    I also adapted code for print statement over multiple line "\n"
+
 2. 'A Whirlwind Tour of Python': VanderPlas, Jake:
    published by O'Rielly Media Inc. 2016
    Reading first few chapters I adapted code for modulus if and elif for use
