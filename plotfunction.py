@@ -1,5 +1,8 @@
-# Exercise 9 - plotfunction.py
-# Mark Cotter, V1_02, 2019-03-23
+# Exercise 10 - plotfunction.py
+# Mark Cotter, V1_03, 2019-03-30
+
+# V1_03 - 2019-03-30
+# Comments updated
 
 # V1_02 - 2019-03-23
 # Numpy array section added
@@ -41,9 +44,24 @@ pl.xlabel('Values of x')
 # https://stackoverflow.com/questions/12608788/changing-the-tick-frequency-on-x-or-y-axis-in-matplotlib
 pl.xticks(numpy.arange(minrange, (maxrange + 1), 1.0))
 # Add label to y axis
-# Code adapted from https://matplotlib.org/users/pyplot_tutorial.html
+# Code adapted from
+# https://stackoverflow.com/questions/12608788/changing-the-tick-frequency-on-x-or-y-axis-in-matplotlib
 pl.ylabel('Green line = x vs. x\nBlue line = x vs. x^2\nRed line = x vs. 2^x')
 # Show the plot of x, x^2 and 2^x
 # Code verbatim from Week 9 lecture
 pl.show()
+# End of program
 
+# Code reference sources:
+# 1. Dr Ian McLoughlin, GMIT: H Dip in Data Analytics lecture notes,
+#    Some code verbatim and other code adapted from the Week 9 lecture for plotting
+#    using matplotlib and numpy modules
+#
+# 2. Code adapted for setting min to max numpy array values from website
+#    https://physics.nyu.edu/pine/pymanual/html/chap3/chap3_arrays.html
+#
+# 3. Code adapted for ploting using matplotlib from website
+#    https://matplotlib.org/users/pyplot_tutorial.html
+#
+# 4. Code adapted for add label to x and y axes from website
+#    https://stackoverflow.com/questions/12608788/changing-the-tick-frequency-on-x-or-y-axis-in-matplotlib

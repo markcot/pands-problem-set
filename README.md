@@ -725,7 +725,7 @@ Amended some comments and updated the file 'second.py' to version V1_05.
 
 #####################################################################################
 
-## Exercise 10 - second.py
+## Exercise 10 - plotfunction.py
 Using python code
 Write a program that displays a plot of the functions x, x^2 and 2^x in the
 range [0, 4].
@@ -760,5 +760,28 @@ I adapted code from the following website to edit x axis interval
 https://stackoverflow.com/questions/12608788/changing-the-tick-frequency-on-x-or-y-axis-in-matplotlib
 
 Version V1_02 of the program created and uploaded to github.
+
+### 2019/03/30
+Amended some comments and updated the file 'plotfunction.py' to version V1_03.
+
+Saved the plotted Figure as 'Figure_1 (plotfunction.py).jpeg' in the git folder
+
+## Code reference sources:
+1. Dr Ian McLoughlin, GMIT: H Dip in Data Analytics lecture notes,
+   Some code verbatim and other code adapted from the Week 9 lecture for plotting
+   using matplotlib and numpy modules
+
+2. Code adapted for setting min to max numpy array values from website
+   https://physics.nyu.edu/pine/pymanual/html/chap3/chap3_arrays.html
+
+3. Code adapted for ploting using matplotlib from website
+   https://matplotlib.org/users/pyplot_tutorial.html
+
+4. Code adapted for add label to x and y axes from website
+   https://stackoverflow.com/questions/12608788/changing-the-tick-frequency-on-x-or-y-axis-in-matplotlib
+
+
+
+
 
 #####################################################################################
