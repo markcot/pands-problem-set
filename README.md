@@ -1,7 +1,7 @@
 # pands-problem-set
 GMIT problem set for Programming and Scripting Module 2019
 #### Created by: Mark Cotter, Email: g00376335@gmit.ie
-### LAST UPDATED 2019-02-17
+### LAST UPDATED 2019-03-30
 
 #####################################################################################
 
@@ -73,18 +73,38 @@ Updated the file 'python sumupto.py' to version V1_04 & amended some comments
 ### 2019/02/17
 Updated the file 'python sumupto.py' to version V1_05 & amended some comments
 
+### 2019/03/30
+I decided to add an exception check for the correct input type value
+as discussed in the Week 10 lecture notes.
+
+I removed the option 02 with the 'x' variable from the code.
+I remove the int() from input() request function so that I could check later check
+if the inputted value was correct, without having to loop a continuous request for a
+new value for 'i'
+
+If the inputted value for 'i' is not the correct integer type a TYPE error message
+is displayed and the program does not compute anything.
+If the inputted value for 'i' is not a non-zero positive integer an VALUE error
+message is displayed and the program does not compute anything.
+
+Version V1_06 of the program created and uploaded to github.
+
 ## Code reference sources:
 1. Dr Ian McLoughlin, GMIT: H Dip in Data Analytics lecture notes,
    January 2019
    I adapted the lecture notes while loop to count down to 0 from i so
    that I could leave out a counter variable
+
 2. 'A Whirlwind Tour of Python': VanderPlas, Jake:
    published by O'Rielly Media Inc. 2016
    Reading first few chapters I adapted shorted version code for adding
    the sum to itself and operators '+=' and '-='
+
 3. I adapted code on the following web page to request user to input a value
    and make that value an integer.
    https://anh.cs.luc.edu/python/hands-on/3.1/handsonHtml/io.html
+
+4. I adapted code from Week 10 lecture in relation try and except for exceptions.
 
 #####################################################################################
 
