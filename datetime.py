@@ -1,15 +1,18 @@
 # Exercise 8 - Datetime.py
-# Mark Cotter, V1_04, 2019-03-23
+# Mark Cotter, V1_05, 2019-03-30
 
-# V1_04 - 2019-02-23
+# V1_05 - 2019-03-30
+# Comments updated
+
+# V1_04 - 2019-03-23
 # Variables initial values added
 # Minor comments added
 
-# V1_03 - 2019-02-22
+# V1_03 - 2019-03-22
 # Amendment made to day of month suffix.
 # Comments added
 
-# V1_02 - 2019-02-22
+# V1_02 - 2019-03-22
 # Added functions to change day of month suffix to display, display PM/AM as
 # lower case and remove unnecessary 0 from the text.
 
@@ -22,6 +25,7 @@
 # Note the name of this program has to have a capital letter 'Datetime.py'
 # as the function 'datetime' will not work if the program name is the same i.e.
 # 'datetime.py'
+# Code adapted from Week 6 lecture
 import datetime as dt
 
 # Initial variable values for 'year' 'month' 'day' 'suffix' 'weekday' 'hour'
@@ -59,7 +63,7 @@ ampm = str(dt.datetime.now().strftime("%p"))
 # Code adapted from Week 7 lecture
 ampm = ampm.lower()
 
-# Temporary variable setting for suffix change test
+# Temporary variable setting for testing suffix changes
 #day = 31
 
 # Add suffix to the day of the month
@@ -90,3 +94,12 @@ else:
 # Prints the result
 print(f"{weekday}, {month} {day}{suffix} {year} at {hour}:{minute}{ampm}")
 
+# Code reference sources:
+# 1. Dr Ian McLoughlin, GMIT: H Dip in Data Analytics lecture notes,
+#    I adapted code from the Week 6 lecture for importing datetime module
+#
+# 2. Code adapted for printing the various year month day and time from webpage
+#    https://docs.python.org/3/library/datetime.html#datetime.datetime.fromtimestamp
+#    and Exercise 2 - begins-with-t.py
+#
+# 3. Code adapted from Week 7 lecture for changing string text to lowercase

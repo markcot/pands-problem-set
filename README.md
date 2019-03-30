@@ -632,6 +632,19 @@ Final issue upload to Git hub.
 Variables initial values added and minor comments added version V1_04 created.
 Code rearranged to make easier to read.
 
+### 2019/03/30
+Amended some comments and updated the file 'Datetime.py' to version V1_05.
+
+## Code reference sources:
+1. Dr Ian McLoughlin, GMIT: H Dip in Data Analytics lecture notes,
+   I adapted code from the Week 6 lecture for importing datetime module
+
+2. Code adapted for printing the various year month day and time from webpage
+   https://docs.python.org/3/library/datetime.html#datetime.datetime.fromtimestamp
+   and Exercise 2 - begins-with-t.py
+
+3. Code adapted from Week 7 lecture for changing string text to lowercase
+
 #####################################################################################
 
 ## Exercise 9 - second.py
