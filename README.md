@@ -709,6 +709,20 @@ python second.py on the command line.
 
 Version V1_04 of the program created and uploaded to github.
 
+### 2019/03/30
+I decided to add the 'lcount' variable added if needed in future for reading every 
+third, fourth or fifth line, etc.
+
+Amended some comments and updated the file 'second.py' to version V1_05.
+
+## Code reference sources:
+1. Dr Ian McLoughlin, GMIT: H Dip in Data Analytics lecture notes,
+   Some code verbatim and other code adapted from the Week 9 lecture for importing
+   the sys module and using the sys.argv function and printing Error message and
+   closing files.
+
+2. Code adapted for striping additional line break adapted from Week 7 lecture.
+
 #####################################################################################
 
 ## Exercise 10 - second.py
