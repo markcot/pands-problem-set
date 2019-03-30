@@ -164,18 +164,24 @@ Updated the file 'begins-with-t.py' to version V1_03 & amended some comments
 ### 2019/02/17
 Updated the file 'begins-with-t.py' to version V1_04 & amended some comments
 
+### 2019/03/30
+Updated the file 'begins-with-t.py' to version V1_05 & amended some comments
+
 ## Code reference sources:
 1. Dr Ian McLoughlin, GMIT: H Dip in Data Analytics lecture notes,
    January 2019
    I adapted code from the lecture notes example Python-Tuesday for checking
    what todays day of the week is.
+
 2. 'A Whirlwind Tour of Python': VanderPlas, Jake:
    published by O'Rielly Media Inc. 2016
    Reading first few chapters I adapted code for if and elif for use in this
    program.
+
 3. I adapted code from the following webpage to return a string for the
    current day of the week
    https://stackoverflow.com/questions/9847213/how-do-i-get-the-day-of-week-given-a-date-in-python
+   
 4. I adapted code from the following webpage to return the first character
    of a text string. This was covered also in a later GMIT lecture
    https://stackoverflow.com/questions/7108080/python-get-the-first-character-of-the-first-string-in-a-list
