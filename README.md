@@ -301,8 +301,8 @@ I then needed to extract the values from the list 'l' and print them in a line
 to get the same text as shown in the exercise.
 I adapted code from the python online tutorial webpage
 https://docs.python.org/3/tutorial/introduction.html#lists
-in a 'while' loop to create a 'for' loop to print all the values in the list 'l' with a
-space separator only print( , end=' ')
+in a 'while' loop to create a 'for' loop to print all the values in the list 'l' with
+a space separator only print( , end=' ')
 
 The program works. I added 'collatz.py' version V1_01 to git and uploaded to my github repository.
 
@@ -312,18 +312,34 @@ uploaded it to my github repository.
 ### 2019/02/17
 Updated the file 'collatz.py' to version V1_03 & amended some comments
 
+### 2019/03/30
+
+I remove the int() from input() request function so that I could check later check
+if the inputted value was correct, without having to loop a continuous request for a
+new value for 'i'
+
+If the inputted value for 'i' is not the correct integer type a TYPE error message
+is displayed and the program does not compute anything.
+If the inputted value for 'i' is not a non-zero positive integer an VALUE error
+message is displayed and the program does not compute anything.
+
+Amended some comments and updated the file 'collatz.py' to version V1_04
+
 ## Code reference sources:
 1. Dr Ian McLoughlin, GMIT: H Dip in Data Analytics lecture notes,
    January and February 2019
    I adapted the lecture notes while loop and discussion about lists
    and the appending items to lists.
+
 2. Mark Cotter February 2019 code for Exercise 1 'sumupto.py' and Exercise 3
    divisors.py asking user to input a positive integer check if it even or odd
    by checking the modulas after dividing by 2 is = 0
+
 3. 'A Whirlwind Tour of Python': VanderPlas, Jake:
    published by O'Rielly Media Inc. 2016
    Reading first few chapters I adapted code for not equal to != if and
    elif for use in this program.
+
 4. I adapted code from the following python tutorial webpage about lists
    and appending list. I adapted code in a 'while' loop to create a 'for' loop
    to print all the values in the list 'l' with a space separator only
@@ -331,6 +347,8 @@ Updated the file 'collatz.py' to version V1_03 & amended some comments
    https://docs.python.org/3/tutorial/introduction.html#lists
    https://docs.python.org/3/tutorial/datastructures.html
 
+5. Code adapted from Exercise 1 - sumupto.py and Week 10 lectures for checking
+   for inputted values with try and except functions
 
 #####################################################################################
 
