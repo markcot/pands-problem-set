@@ -355,7 +355,7 @@ Amended some comments and updated the file 'collatz.py' to version V1_04
 ## Exercise 5 - primes.py
 Using python code
 Write a program that asks the user to input a positive integer and tells the
-user whether the number is a prime.
+user whether or not the number is a prime.
 
 ### 2019/02/17
 I created the first file 'primes.py' version V1_01 in a folder on my Desktop
@@ -386,16 +386,35 @@ The program cycle through the range of values between 2 and 'num'. I used a vari
 
 The program works. I added 'primes.py' version V1_01 to git and uploaded to my github repository.
 
+### 2019/03/30
+
+I remove the int() from input() request function so that I could check later check
+if the inputted value was correct, without having to loop a continuous request for a
+new value for 'i'.
+
+If the inputted value for 'i' is not the correct integer type a TYPE error message
+is displayed and the program does not compute anything.
+If the inputted value for 'i' is not a positive integer an VALUE error
+message is displayed and the program does not compute anything.
+
+I added print statements if the positive integer inputted is not a prime.
+
+Amended some comments and updated the file 'primes.py' to version V1_02
+
 ## Code reference sources:
  1. Mark Cotter February 2019 code for Exercise 1 'sumupto.py' asking user
     to input a positive integer.
+    
  2. Dr Ian McLoughlin, GMIT: H Dip in Data Analytics lecture notes,
     January and February 2019
     I adapted the lecture notes code about for loops and break 
+
  3. I adapted code from the python online tutorial webpage
     https://docs.python.org/3/tutorial/controlflow.html 
     to use a for loop and break to check if a number is a prime
 
+ 4. Code adapted from Exercise 4 - collatz.py and Week 10 lectures for checking
+    for inputted values with try and except functions
 
 #####################################################################################
 
