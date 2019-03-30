@@ -387,14 +387,13 @@ The program cycle through the range of values between 2 and 'num'. I used a vari
 The program works. I added 'primes.py' version V1_01 to git and uploaded to my github repository.
 
 ### 2019/03/30 (a)
-
 I remove the int() from input() request function so that I could check later check
 if the inputted value was correct, without having to loop a continuous request for a
-new value for 'i'.
+new value for 'num'.
 
-If the inputted value for 'i' is not the correct integer type a TYPE error message
+If the inputted value for 'num' is not the correct integer type a TYPE error message
 is displayed and the program does not compute anything.
-If the inputted value for 'i' is not a positive integer an VALUE error
+If the inputted value for 'num' is not a positive integer an VALUE error
 message is displayed and the program does not compute anything.
 
 I added print statements if the positive integer inputted is not a prime.
@@ -402,8 +401,10 @@ I added print statements if the positive integer inputted is not a prime.
 Amended some comments and updated the file 'primes.py' to version V1_02
 
 ### 2019/03/30 (b)
-
 Amended some comments and updated the file 'primes.py' to version V1_03
+
+### 2019/03/30 (c)
+Amended some comments and updated the file 'primes.py' to version V1_04
 
 ## Code reference sources:
  1. Mark Cotter February 2019 code for Exercise 1 'sumupto.py' asking user
@@ -462,7 +463,6 @@ I deleted the unused code, saved the file and made the last commit for version
 V1_01 of 'secondstring.py'.
 
 ### 2019/03/30
-
 Amended some comments and updated the file 'secondstring.py' to version V1_02
 
 ## Code reference sources:
@@ -532,6 +532,37 @@ acceptable.
 
 I will use 'num' as the variable for the entered number and 'root' as the
 variable for the approximation of the square root of 'num'
+
+### 2019/03/30
+I remove the float() from input() request function so that I could check later check
+if the inputted value was correct, without having to loop a continuous request for a
+new value for 'num'.
+
+If the inputted value for 'num' is not the correct number type a TYPE error message
+is displayed and the program does not compute anything.
+If the inputted value for 'num' is not a positive number an VALUE error
+message is displayed and the program does not compute anything.
+
+I added print statements if the positive integer inputted is not a prime.
+
+Amended some comments and updated the file 'squareroot.py' to version V1_02
+
+## Code reference sources:
+1. Code adapted for Babylonian square-root algorithm found on webpage
+   https://blogs.sas.com/content/iml/2016/05/16/babylonian-square-roots.html
+
+2. Code adapted from Exercise 5 - primes.py and Week 10 lectures for checking
+   for inputted values with try and except functions
+
+3. Dr Ian McLoughlin, GMIT: H Dip in Data Analytics lecture notes,
+   I adapted code from the Week 8 lecture for looping a square root
+
+4. Code for rounding number to one decimal place adapted from website
+   https://stackoverflow.com/questions/13479163/round-float-to-x-decimals/22155830
+
+5. Formated print statement code adapted from Week 7 lecture.
+
+
 
 #####################################################################################
 

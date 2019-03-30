@@ -1,11 +1,14 @@
 # Exercise 5 - primes.py
-# Mark Cotter, V1_03, 2019-03-30
+# Mark Cotter, V1_04, 2019-03-30
+
+# V1_04 - 2019-03-30
+# Comments updated.
 
 # V1_03 - 2019-03-30
 # Comments updated.
 
 # V1_02 - 2019-03-30
-# Removed the loop for continuosly requesting new values for 'i'.
+# Removed the loop for continuosly requesting new values for 'num'.
 # Added input type checking with try function
 # Added print for when the number is not a prime
 # Comments updated.
@@ -32,7 +35,7 @@ num = input("Please enter a positive integer: ")
 try:
     # Try to convert 'num' to an integer type
     num = int(num)
-    # If 'i' is an positive integer
+    # If 'num' is an positive integer
     if num >= 0:
         # If the number is 0
         if num == 0:
